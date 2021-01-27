@@ -30,6 +30,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install --upgrade platformio
     - name: Run PlatformIO
-      run: pio ci --board=uno --board=teensy41 --board=esp32
+      run: pio ci --board=uno --board=teensy41 --board=espressif32
       env:
         PLATFORMIO_CI_SRC: ${{ matrix.example }}
