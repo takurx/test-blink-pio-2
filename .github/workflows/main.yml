@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        example: [test-blink-pio-2/src/main.c, test-blink-pio-2/test]
+        example: [src/main.c, test]
 
     steps:
     - uses: actions/checkout@v2
