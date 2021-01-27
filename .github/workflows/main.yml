@@ -6,9 +6,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        example: [src/main.c, test]
 
     steps:
     - uses: actions/checkout@v2
@@ -31,5 +28,3 @@ jobs:
         pip install --upgrade platformio
     - name: Run PlatformIO
       run: pio ci --board=uno --board=teensy41 --board=esp32dev
-      env:
-        PLATFORMIO_CI_SRC: ${{ matrix.example }}
