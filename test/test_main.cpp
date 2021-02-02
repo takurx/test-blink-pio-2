@@ -1,3 +1,6 @@
+// Ref. 1: https://docs.platformio.org/en/latest/tutorials/core/unit_testing_blink.html
+// Ref. 2: https://docs.platformio.org/en/latest/plus/unit-testing.html
+
 #include <Arduino.h>
 #include <unity.h>
 
